@@ -192,7 +192,14 @@ def player_stats(name) #takes in players name, returns hash of player stats in s
   end
 end
 
-def big_shoe_rebounds #returns number of rebounds associated with player with largest shoe_size
+def big_shoe_rebounds#returns number of rebounds associated with player with largest shoe_size
+largest_shoes_playerz_shoe_size = 0 
+rebounds_of_largest_shoe_player = 0
+  game_hash.each do |team_choice, team_info|
+    team_info[:players].each do |player|
+      if player[]
+    end
+end
 end
 
 def most_points_scored
