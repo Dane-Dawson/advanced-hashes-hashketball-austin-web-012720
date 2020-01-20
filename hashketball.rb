@@ -221,9 +221,17 @@ most_points_player
 end
 
 def winning_team
+  game_hash.each do |team_choice, team_info|
+    
 end
 
 def player_with_longest_name
+  longest_name_length = 0 
+  longest_name_player = "no one"
+  game_hash.each do |team_choice, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name].length > longest_name_length
+        longest_name_length = player[:player_name].length
 end
 
 def long_name_steals_a_ton?
@@ -236,8 +244,9 @@ def long_name_steals_a_ton?
         most_points_player =  player[:player_name]
       end
     end
-end
-most_points_player
+  end
+
+most_steals_player == longest_name_player
 end
 
 
