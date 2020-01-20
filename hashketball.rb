@@ -212,12 +212,12 @@ def most_points_scored
   game_hash.each do |team_choice, team_info|
     team_info[:players].each do |player|
       if player[:points] > most_points
-        largest_shoes_player_shoe_size = player[:points]
-        rebounds_of_largest_shoe_player =  player[:rebounds]
+        most_points = player[:points]
+        most_points_player =  player[:name]
       end
     end
 end
-rebounds_of_largest_shoe_player
+most_points_player
 end
 
 def winning_team
