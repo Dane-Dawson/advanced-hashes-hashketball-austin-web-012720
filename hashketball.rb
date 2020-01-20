@@ -207,6 +207,17 @@ rebounds_of_largest_shoe_player
 end
 
 def most_points_scored
+  largest_shoes_player_shoe_size = 0 
+rebounds_of_largest_shoe_player = 0
+  game_hash.each do |team_choice, team_info|
+    team_info[:players].each do |player|
+      if player[:shoe] > largest_shoes_player_shoe_size
+        largest_shoes_player_shoe_size = player[:shoe]
+        rebounds_of_largest_shoe_player =  player[:rebounds]
+      end
+    end
+end
+rebounds_of_largest_shoe_player
 end
 
 def winning_team
