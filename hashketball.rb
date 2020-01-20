@@ -232,6 +232,12 @@ def player_with_longest_name
     team_info[:players].each do |player|
       if player[:player_name].length > longest_name_length
         longest_name_length = player[:player_name].length
+        longest_name_player = player[:player_name]
+      end
+    end
+  end
+end
+longest_name_player
 end
 
 def long_name_steals_a_ton?
