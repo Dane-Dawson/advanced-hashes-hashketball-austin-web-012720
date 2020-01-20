@@ -221,7 +221,7 @@ most_points_player
 end
 
 def winning_team
-  game_hash.each do |team_choice, team_info|
+  game_hash[:home].each do |team_choice, team_info|
   
 end  
 end
